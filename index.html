@@ -124,51 +124,173 @@
 margin-left: 177px;
 margin-top: -59px;
 }
-         
+@media (max-width  :741px ) {
+ .form{
+margin-left: 100px;
+     
+ }
+ .quan{
+     margin-left: 290px;
+ }
+    
+}
+@media (max-width  :660px ) {
+    .form{
+margin-left: 50px;
+     
+ }
+ .quan{
+     margin-left:240px;
+ }
+}
+@media (max-width  :610px ){
+    .form{
+margin-left: 23px;
+     
+ }
+
+ .quan{
+     margin-left:180px;
+ }
+}
+  @media (max-width  :582px ){
+    .form{
+margin-left: 8px;
+     
+ } 
+ .quan{
+     margin-left: 180px;
+ }
+   }  
+   @media (max-width  :428px ) {
+    .qua{
+        width: 600px;
+    }
+    .form{
+        margin-left: 15px;
+        height: 900px;
+        width: 550px;
+    }
+    .start{
+        margin:50px ;
+margin-top: 20px;
+        
+
+    }
+    .tn{ width: 400px;
+        height: 30px;
+        
+    }
+.uid{
+    width: 400px;
+        height: 30px;
+}
+.email{
+    width: 400px;
+        height: 30px;
+}
+.no{
+    width: 400px;
+        height: 30px;
+}
+.firstname{
+    width: 200px;
+        height: 30px;
+}
+.name1n{
+    margin-top: -45px;
+        margin-left: 30px;
+}
+.last{
+    width: 190px;
+        height: 30px;
+        
+}
+    .inp4{
+        margin-top: 40px;
+        
+    }
+    .inp3{
+        margin-top: 40px;
+    }
+    .inp1{
+        margin-top: 40px;
+    }
+    .inp{
+        
+        margin-top: 40px;
+    }
+    body{
+        background-size: 2000px;
+    }
+
+
+   }@media (max-width  :558px ) {
+    .qua{
+            width: 800px;}
+    }
+
+  
+
+   
+   .body{
+     width: 100%;
+     height: 100%;
+   }
+  
+
      </style>
+     
     
 </head>
-<body>
+<body><div class="pl">
     <label class="plc" for="">policy:</label>
     <button id="showbutton">></button>
    <div id="pa"> <p id="paragraph"> hhbhbhdshbhdf</p>
-    <button class="x">X</button> 
+    <button class="x">X</button> </div>
 </div>
     <script>
         document.getElementById("showbutton").addEventListener("click", function(){
             document.getElementById("pa").style.display ="block";
         });
     </script>
+
    
     
-   <div class="qua">
+   <div   class="qua">
        <h2 class="quan">Quantum ESL</h2>
    </div>
    <div class="form"><div class="start
     ">
        <h2 class="h">Gaming Tournament Entry Form</h2>
        <h3 class="hh"> Register this form for participate in Tournament </h3>
-       <div class="int">
+       <form class="int"  action="https://formspree.io/f/mpzvyqqp"
+       method="POST">
            <lable class="label">Team name</lable ><br>
-           <input class="tn" type="text" placeholder=" Quantum gaming"  ><br>
-           
+           <input name="Team name" class="tn" type="text" placeholder=" Quantum gaming" required ><br>
+        <div class="inp">  
     <div class="name"><lable  class="label">Captain name</lable >
-<br><input type="text" class="first name" placeholder="First name"> <div class="name1n"><br>
-    <input type="text" class="last " placeholder="Last name"></div>
+<br><input name="First name" type="text" class="firstname" placeholder="First name"required> <div class="name1n"> <br>
+    <input name="last name" type="text" class="last " placeholder="Last name" required></div></div>
           
-       </div>
+       </div><div class="inp1">
       <lable  class="label"> Captain UID</lable > <br>
-      <input type="text" class="uid" placeholder="1234567890"> <br>
+      <input name="uid" type="text" class="uid" placeholder="1234567890" required > </div><br>
+     <div class="inp3">
         <label class="label" >
       Email:</lable><br>
-      <input type="email" class="email" placeholder="Demo123@gmail.com"> <br>
-      <lable  class="label" > Phone number</lable ><br>
-     <input type="number" class="no" placeholder="+91XXXXXXXXXX" > <br>
-     <button class="butt">
+      <input name="email"  type="email" class="email" placeholder="Demo123@gmail.com" required> </div><br>
+     <div class="inp4"> <lable  class="label" > Phone number</lable ><br>
+        <small  style="color: gray;"  > format:123-456-7890 </small>
+     <input name="phone no" type="tel" class="no" placeholder="+91XXXXXXXXXX" required 
+     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+     > </div>
+     <br>
+     <button  type="submit"   class="butt">
          Summit
 
      </button></div>
-   </div> 
+    </form> 
   
    
 </body>
