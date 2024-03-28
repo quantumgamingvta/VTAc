@@ -32,18 +32,23 @@
             margin-top: -39px;
 
          }
+         .int{
+        margin-left:0px ;
+             
+         }
          .form{
              width: 545px;
-             height:560px;
+             height:100%;
              
         
-            margin-left: 180px;
+            margin-left: 23%;
+            margin-right:25% ;
             
             border: 3px solid rgb(32, 31, 34);
             margin-top: -4px;
          }
          .start{
-             margin-left: 59px;
+             margin-left: 15%;
              padding: 17px;
              
          }
@@ -73,9 +78,9 @@
 
 }
 .butt{
-    margin-left: 240px;
+    margin-left: 85px;
     margin-top: 24px;
-    width: 158px;
+    width: 218px;
     height: 33px;
     background-color: rgb(98, 98, 162);
 }
@@ -99,11 +104,13 @@
 .qua{
     background-color: rgb(170, 147, 223);
     height: 41px;
+    width: 100%;
     
 }
 .quan{
     margin-top:-25px ;
-    margin-left: 370px;
+    margin-left: 45%;
+
 
 }
 
@@ -124,123 +131,87 @@
 margin-left: 177px;
 margin-top: -59px;
 }
-@media (max-width  :741px ) {
- .form{
-margin-left: 100px;
-     
- }
- .quan{
-     margin-left: 290px;
- }
+@media (max-width:984px) {
+    .form{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+ @media (max-width:768px) {
+.qua{
+    width:100% ;
+
+
+    
     
 }
-@media (max-width  :660px ) {
-    .form{
-margin-left: 50px;
-     
- }
- .quan{
-     margin-left:240px;
- }
-}
-@media (max-width  :610px ){
-    .form{
-margin-left: 23px;
-     
- }
 
- .quan{
-     margin-left:180px;
- }
+.quan{
+    margin-left: 35%;
 }
-  @media (max-width  :582px ){
-    .form{
-margin-left: 8px;
+.form{
+flex-wrap: wrap;
+
+    background-color: brown;
+    margin-left: 3%;
+    margin-right:10%  ;
+    height: 100%;
+    width: 95%;
+}
+.butt{
+    
+    margin-left: 10%;
+    
+}
+.int{
+    margin-left: -8%;
+    margin-right: 0%;
+    
+}
+
      
  } 
- .quan{
-     margin-left: 180px;
+ @media (max-width:479px){
+     .form{
+         background:green;
+        
+         
+         width: 100%;
+         margin-left: 0%;
+     }
+     .h{
+         margin-left: -11%;
+        width: 100%;
+        height: 100%;
+     }
+     .hh{margin-left: -9%;
+         width: 100%;
+         height: 100%;
+     }
+     .butt{
+         margin-left: 20%;
+     }
+     .int{
+         margin-left: -16%;
+     }
+     
+ } 
+ @media (max-width:448px){
+     .h{
+         margin-left: -14%;
+         width:74% ;
+         background-color: blue;
+         padding: 0%;
+         
+
+     }
+     .hh{margin-left: -16%;
+width: 99%;
+background-color: blue;
+     }
+     
  }
-   }  
-   @media (max-width  :428px ) {
-    .qua{
-        width: 600px;
-    }
-    .form{
-        margin-left: 15px;
-        height: 900px;
-        width: 550px;
-    }
-    .start{
-        margin:50px ;
-margin-top: 20px;
-        
 
-    }
-    .tn{ width: 400px;
-        height: 30px;
-        
-    }
-.uid{
-    width: 400px;
-        height: 30px;
-}
-.email{
-    width: 400px;
-        height: 30px;
-}
-.no{
-    width: 400px;
-        height: 30px;
-}
-.firstname{
-    width: 200px;
-        height: 30px;
-}
-.name1n{
-    margin-top: -45px;
-        margin-left: 30px;
-}
-.last{
-    width: 190px;
-        height: 30px;
-        
-}
-    .inp4{
-        margin-top: 40px;
-        
-    }
-    .inp3{
-        margin-top: 40px;
-    }
-    .inp1{
-        margin-top: 40px;
-    }
-    .inp{
-        
-        margin-top: 40px;
-    }
-    body{
-        background-size: 2000px;
-    }
-
-
-   }@media (max-width  :558px ) {
-    .qua{
-            width: 800px;}
-    }
-    @media (max-width:768px) {
-        
-    }
-
-  
-
-   
-   .body{
-     width: 100%;
-     height: 100%;
-   }
-  
 
      </style>
      
@@ -265,8 +236,8 @@ margin-top: 20px;
    </div>
    <div class="form"><div class="start
     ">
-       <h2 class="h">Gaming Tournament Entry Form</h2>
-       <h3 class="hh"> Register this form for participate in Tournament </h3>
+       <h2 class="h">Tournament Entry Form</h2>
+       <h3 class="hh"> Register this form to join in Tournament </h3>
        <form class="int"  action="https://formspree.io/f/mpzvyqqp"
        method="POST">
            <lable class="label">Team name</lable ><br>
